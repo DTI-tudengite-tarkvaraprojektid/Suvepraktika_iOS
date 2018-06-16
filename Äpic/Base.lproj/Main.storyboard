@@ -266,6 +266,14 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P02-0x-3xG">
+                                        <rect key="frame" x="146" y="30" width="82" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="CHECKOUT"/>
+                                        <connections>
+                                            <segue destination="06j-BM-sJt" kind="show" identifier="testsegue" id="BxB-s0-OdW"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
@@ -378,11 +386,210 @@
             </objects>
             <point key="canvasLocation" x="709.60000000000002" y="31.934032983508249"/>
         </scene>
+        <!--UserInputInfo-->
+        <scene sceneID="OkL-Kz-7RT">
+            <objects>
+                <viewController title="UserInputInfo" id="06j-BM-sJt" customClass="UserInputInfo" customModule="A_pic" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Mzx-TB-RPi">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7Gg-JJ-ng3">
+                                <rect key="frame" x="45" y="105" width="100" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" textContentType="given-name"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LP7-Y4-Ya5">
+                                <rect key="frame" x="202" y="105" width="100" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" textContentType="family-name"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1kO-Re-aYP">
+                                <rect key="frame" x="45" y="179" width="100" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="phonePad" textContentType="tel"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="E-mail" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pNc-8G-NCn">
+                                <rect key="frame" x="45" y="249" width="200" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress" textContentType="email"/>
+                            </textField>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="2qq-9o-L3Y">
+                                <rect key="frame" x="47.5" y="330" width="280" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="Photolab[ADDRESS]"/>
+                                    <segment title="My address"/>
+                                </segments>
+                                <color key="tintColor" red="0.1215686275" green="0.33725490200000002" blue="0.43921568630000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="selectedSegmentTapped:" destination="06j-BM-sJt" eventType="valueChanged" id="nCf-9r-Foc"/>
+                                </connections>
+                            </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AEe-rc-Vnc">
+                                <rect key="frame" x="169.5" y="617" width="37" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Enter">
+                                    <color key="titleColor" red="0.1215686275" green="0.33725490200000002" blue="0.43921568630000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="enterButton:" destination="06j-BM-sJt" eventType="touchUpInside" id="ZMn-cH-QmX"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="My address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ghl-uJ-zmX">
+                                <rect key="frame" x="47.5" y="390" width="280" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" textContentType="location"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ipD-Nl-orf">
+                                <rect key="frame" x="45" y="67" width="280" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="mbT-HF-bq6">
+                                <rect key="frame" x="45" y="484" width="11" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="termsSwitch:" destination="06j-BM-sJt" eventType="valueChanged" id="5Wa-Lt-aiH"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="I accept the" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GFg-ZJ-b1Z">
+                                <rect key="frame" x="105" y="490" width="81" height="18"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="flo-X1-Bet">
+                                <rect key="frame" x="184" y="484" width="160" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Terms and Conditions">
+                                    <color key="titleColor" red="0.1215686275" green="0.33725490200000002" blue="0.43921568630000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="GCt-mg-0Fi" kind="presentation" modalPresentationStyle="overCurrentContext" id="Lkp-h0-ZdA"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="mU8-Kd-818"/>
+                    </view>
+                    <connections>
+                        <outlet property="LastNameTextBox" destination="LP7-Y4-Ya5" id="svQ-lf-lQf"/>
+                        <outlet property="PhoneNumberBox" destination="1kO-Re-aYP" id="EPq-x3-N8h"/>
+                        <outlet property="addressTextBox" destination="ghl-uJ-zmX" id="GCG-mJ-FQw"/>
+                        <outlet property="emailTextBox" destination="pNc-8G-NCn" id="xSX-p1-yb7"/>
+                        <outlet property="enterButton" destination="AEe-rc-Vnc" id="ig4-bJ-BIq"/>
+                        <outlet property="lastNameTextBox" destination="LP7-Y4-Ya5" id="7a7-bD-ZID"/>
+                        <outlet property="lblValidationMessage" destination="ipD-Nl-orf" id="whh-SF-NrF"/>
+                        <outlet property="nameTextBox" destination="7Gg-JJ-ng3" id="F63-l4-jnn"/>
+                        <outlet property="phoneNumberBox" destination="1kO-Re-aYP" id="aG2-Ta-Eyb"/>
+                        <outlet property="selectedSegment" destination="2qq-9o-L3Y" id="eOa-Fp-j4K"/>
+                        <outlet property="termsSwitch" destination="mbT-HF-bq6" id="f0d-9d-LJZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bxt-6v-Vlm" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2898" y="32"/>
+        </scene>
+        <!--Terms Popup View Controller-->
+        <scene sceneID="qMu-6s-UYg">
+            <objects>
+                <viewController id="GCt-mg-0Fi" customClass="TermsPopupViewController" customModule="A_pic" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Bd6-tK-CiU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k5c-MZ-S6s">
+                                <rect key="frame" x="63" y="101" width="249" height="424"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Terms and Conditions" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2zP-K6-jEZ">
+                                        <rect key="frame" x="40" y="8" width="167" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="faw-xB-T6F">
+                                        <rect key="frame" x="107" y="394" width="34" height="30"/>
+                                        <state key="normal" title="Back"/>
+                                        <connections>
+                                            <action selector="backFromTerms:" destination="GCt-mg-0Fi" eventType="touchUpInside" id="cZp-ha-FmI"/>
+                                        </connections>
+                                    </button>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YhG-X4-br8">
+                                        <rect key="frame" x="4" y="47" width="240" height="346"/>
+                                        <subviews>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Zs-29-VFK">
+                                                <rect key="frame" x="0.0" y="0.0" width="240" height="346"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment>
+                                                        <string key="content">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                                        <attributes>
+                                                            <font key="NSFont" metaFont="system" size="14"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="3Zs-29-VFK" secondAttribute="trailing" id="4f8-oN-rU0"/>
+                                            <constraint firstAttribute="bottom" secondItem="3Zs-29-VFK" secondAttribute="bottom" id="EII-Qe-xI4"/>
+                                            <constraint firstItem="3Zs-29-VFK" firstAttribute="centerY" secondItem="YhG-X4-br8" secondAttribute="centerY" id="Wln-VB-zIi"/>
+                                            <constraint firstItem="3Zs-29-VFK" firstAttribute="top" secondItem="YhG-X4-br8" secondAttribute="top" id="ggt-U8-TU4"/>
+                                            <constraint firstItem="3Zs-29-VFK" firstAttribute="centerX" secondItem="YhG-X4-br8" secondAttribute="centerX" id="jlr-QZ-4ft"/>
+                                            <constraint firstItem="3Zs-29-VFK" firstAttribute="leading" secondItem="YhG-X4-br8" secondAttribute="leading" id="w4R-oU-Yfh"/>
+                                        </constraints>
+                                    </scrollView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="YhG-X4-br8" firstAttribute="top" secondItem="k5c-MZ-S6s" secondAttribute="top" constant="47" id="EC1-XA-RX0"/>
+                                    <constraint firstItem="YhG-X4-br8" firstAttribute="centerX" secondItem="k5c-MZ-S6s" secondAttribute="centerX" id="KH6-xW-2sz"/>
+                                    <constraint firstItem="YhG-X4-br8" firstAttribute="top" secondItem="2zP-K6-jEZ" secondAttribute="bottom" constant="18" id="MtI-Ye-cX3"/>
+                                    <constraint firstAttribute="bottom" secondItem="YhG-X4-br8" secondAttribute="bottom" constant="31" id="OQ7-JN-5TD"/>
+                                    <constraint firstItem="YhG-X4-br8" firstAttribute="centerX" secondItem="faw-xB-T6F" secondAttribute="centerX" id="YYk-HA-yhq"/>
+                                    <constraint firstItem="faw-xB-T6F" firstAttribute="top" secondItem="YhG-X4-br8" secondAttribute="bottom" constant="1" id="abf-ZK-ENn"/>
+                                    <constraint firstItem="YhG-X4-br8" firstAttribute="centerX" secondItem="2zP-K6-jEZ" secondAttribute="centerX" id="eWj-QD-K0f"/>
+                                    <constraint firstItem="YhG-X4-br8" firstAttribute="leading" secondItem="k5c-MZ-S6s" secondAttribute="leading" constant="4" id="mAc-xX-fp0"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.1215686275" green="0.33725490200000002" blue="0.43921568630000002" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="k5c-MZ-S6s" firstAttribute="leading" secondItem="UFR-8o-enY" secondAttribute="leading" constant="63" id="CVT-a1-muP"/>
+                            <constraint firstItem="k5c-MZ-S6s" firstAttribute="centerX" secondItem="Bd6-tK-CiU" secondAttribute="centerX" id="Xvr-Fb-8Hs"/>
+                            <constraint firstItem="UFR-8o-enY" firstAttribute="bottom" secondItem="k5c-MZ-S6s" secondAttribute="bottom" constant="142" id="vTS-g4-yeM"/>
+                            <constraint firstItem="k5c-MZ-S6s" firstAttribute="top" secondItem="UFR-8o-enY" secondAttribute="top" constant="81" id="wru-1w-Bzy"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="UFR-8o-enY"/>
+                    </view>
+                    <connections>
+                        <outlet property="backButton" destination="faw-xB-T6F" id="JcF-3E-Dcz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lQm-ZZ-cl6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3684" y="32"/>
+        </scene>
     </scenes>
     <resources>
         <image name="logo_text" width="562" height="562"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="iID-zh-SN6"/>
+        <segue reference="IWU-GR-axp"/>
     </inferredMetricsTieBreakers>
 </document>

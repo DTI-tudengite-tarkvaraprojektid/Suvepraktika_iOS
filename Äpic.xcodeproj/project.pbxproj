@@ -16,6 +16,8 @@
 		D7740A3F20CFA8FA00DF86BA /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7740A3E20CFA8FA00DF86BA /* CustomTableViewCell.swift */; };
 		D7740A4120CFAACD00DF86BA /* Cart.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7740A4020CFAACD00DF86BA /* Cart.swift */; };
 		D7740A4320CFB79B00DF86BA /* CartData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7740A4220CFB79B00DF86BA /* CartData.swift */; };
+		D78D5D7E20D3BE46005866D0 /* UserInputInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78D5D7C20D3BE46005866D0 /* UserInputInfo.swift */; };
+		D78D5D7F20D3BE46005866D0 /* TermsPopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78D5D7D20D3BE46005866D0 /* TermsPopupViewController.swift */; };
 		D7A8B27520D0F1F40064F3B7 /* UIImageCropper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A8B27320D0F1F40064F3B7 /* UIImageCropper.swift */; };
 		D7A8B27620D0F1F40064F3B7 /* UIImage+FixOrientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A8B27420D0F1F40064F3B7 /* UIImage+FixOrientation.swift */; };
 		D7D38AFE20CE595F00E375D8 /* Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D38AFD20CE595F00E375D8 /* Filter.swift */; };
@@ -33,6 +35,8 @@
 		D7740A3E20CFA8FA00DF86BA /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		D7740A4020CFAACD00DF86BA /* Cart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cart.swift; sourceTree = "<group>"; };
 		D7740A4220CFB79B00DF86BA /* CartData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartData.swift; sourceTree = "<group>"; };
+		D78D5D7C20D3BE46005866D0 /* UserInputInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInputInfo.swift; sourceTree = "<group>"; };
+		D78D5D7D20D3BE46005866D0 /* TermsPopupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TermsPopupViewController.swift; sourceTree = "<group>"; };
 		D7A8B27320D0F1F40064F3B7 /* UIImageCropper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageCropper.swift; sourceTree = "<group>"; };
 		D7A8B27420D0F1F40064F3B7 /* UIImage+FixOrientation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+FixOrientation.swift"; sourceTree = "<group>"; };
 		D7D38AFD20CE595F00E375D8 /* Filter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Filter.swift; sourceTree = "<group>"; };
@@ -78,6 +82,8 @@
 				D7740A4220CFB79B00DF86BA /* CartData.swift */,
 				D7740A3E20CFA8FA00DF86BA /* CustomTableViewCell.swift */,
 				7B486F7D20A63CE600826380 /* Main.storyboard */,
+				D78D5D7D20D3BE46005866D0 /* TermsPopupViewController.swift */,
+				D78D5D7C20D3BE46005866D0 /* UserInputInfo.swift */,
 				7B486F8020A63CE800826380 /* Assets.xcassets */,
 				7B486F8220A63CE800826380 /* LaunchScreen.storyboard */,
 				7B486F8520A63CE800826380 /* Info.plist */,
@@ -157,12 +163,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				D7D38AFE20CE595F00E375D8 /* Filter.swift in Sources */,
+				D78D5D7E20D3BE46005866D0 /* UserInputInfo.swift in Sources */,
 				7B486F7C20A63CE600826380 /* SelectImage.swift in Sources */,
 				D7740A3F20CFA8FA00DF86BA /* CustomTableViewCell.swift in Sources */,
 				D7A8B27520D0F1F40064F3B7 /* UIImageCropper.swift in Sources */,
 				7B486F7A20A63CE600826380 /* AppDelegate.swift in Sources */,
 				7B10451C20A78B2000624719 /* SelectQuantity.swift in Sources */,
 				D7A8B27620D0F1F40064F3B7 /* UIImage+FixOrientation.swift in Sources */,
+				D78D5D7F20D3BE46005866D0 /* TermsPopupViewController.swift in Sources */,
 				D7740A4320CFB79B00DF86BA /* CartData.swift in Sources */,
 				D7740A4120CFAACD00DF86BA /* Cart.swift in Sources */,
 			);
@@ -312,7 +320,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LPZAYVDG7L;
 				INFOPLIST_FILE = "Äpic/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -333,7 +341,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LPZAYVDG7L;
 				INFOPLIST_FILE = "Äpic/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

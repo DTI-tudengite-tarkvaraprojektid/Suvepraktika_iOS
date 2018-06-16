@@ -42,39 +42,21 @@ class Cart: UIViewController, UITableViewDelegate, UITableViewDataSource, UINavi
     }
     
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
-        print("BEFORE!!!!")
-        for element in CartData.imageIndex {
-            print("INDEX: " + String(element))
-        }
-        for element in CartData.imageQuantities {
-            print("QUANTITIES: " + String(element))
-        }
-        for element in CartData.imagesInCart {
-            print("IMAGES: ", element)
-        }
-        
         if editingStyle == .delete {
             let index : Int = (indexPath.section * CartData.imagesInCart.count) + indexPath.row
-            print("SIIN ON KUSTUTATAVA INDEX")
-            print(index)
             CartData.totalImageQuantity -= CartData.imageQuantities[index]
             totalPrice.text = String(CartData.totalImageQuantity)
             
             CartData.imagesInCart.remove(at: indexPath.row)
             CartData.imageQuantities.remove(at: indexPath.row)
+            CartData.imageIndex.remove(at: indexPath.row)
+            var x: Int = 0
+            while x < CartData.imagesInCart.count {
+                CartData.imageIndex[x] = x
+                x += 1
+            }
             tableView.reloadData()
             CartData.countOfImages -= 1
-            
-            print("AFTER!!!!")
-            for element in CartData.imageIndex {
-                print("INDEX: " + String(element))
-            }
-            for element in CartData.imageQuantities {
-                print("QUANTITIES: " + String(element))
-            }
-            for element in CartData.imagesInCart {
-                print("IMAGES: ", element)
-            }
         }
     }
     
@@ -85,8 +67,13 @@ class Cart: UIViewController, UITableViewDelegate, UITableViewDataSource, UINavi
     private let cropper = UIImageCropper(cropRatio: 2/3)
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let secondController = segue.destination as! Filter
-        secondController.vanillaImage = selectedImage
+        if segue.identifier == "segue" {
+            let secondController = segue.destination as! Filter
+            secondController.vanillaImage = selectedImage
+        } else if segue.identifier == "testsegue" {
+            //let secondController = segue.destination as! UserInputInfo
+        }
+        
     }
     
     @IBAction func addPicture(_ sender: Any) {
@@ -99,8 +86,6 @@ class Cart: UIViewController, UITableViewDelegate, UITableViewDataSource, UINavi
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        print("KOGU KOGUS CART")
-        print(CartData.totalImageQuantity)
         totalPrice.text = String(CartData.totalImageQuantity)
         
         tableView.delegate = self
@@ -138,9 +123,8 @@ extension Cart: UIImageCropperProtocol {
 
 extension Cart: CellDelegate {
     func didTapDeleteButton(id: Int) {
-        print("MIDAGI JUHTUS")
-        let alertTitle = "LUL"
-        let message = "\(id) on antud lahtri ID"
+        let alertTitle = "TEST"
+        let message = "\(id) is current row's ID"
         
         let alert = UIAlertController(title: alertTitle, message: message, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
@@ -151,7 +135,6 @@ extension Cart: CellDelegate {
         CartData.imageQuantities[id] += 1
         let indexPath = IndexPath(item: id, section: 0)
         tableView.reloadRows(at: [indexPath], with: UITableViewRowAnimation.none)
-        print("ADD ANTUD LIIKME ID " + String(id) + " JA VÄÄRTUS " + String(CartData.imageQuantities[id]))
         
         CartData.addToTotalQuantity()
         totalPrice.text = String(CartData.totalImageQuantity)
@@ -162,7 +145,6 @@ extension Cart: CellDelegate {
             CartData.imageQuantities[id] -= 1
             let indexPath = IndexPath(item: id, section: 0)
             tableView.reloadRows(at: [indexPath], with: UITableViewRowAnimation.none)
-            print("SUB ANTUD LIIKME ID " + String(id) + " JA VÄÄRTUS " + String(CartData.imageQuantities[id]))
             
             CartData.subtractFromTotalQuantity()
             totalPrice.text = String(CartData.totalImageQuantity)
