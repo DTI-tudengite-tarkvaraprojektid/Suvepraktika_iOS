@@ -4,6 +4,7 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
@@ -115,7 +116,7 @@
                         <viewLayoutGuide key="safeArea" id="c0c-og-Mht"/>
                     </view>
                     <navigationItem key="navigationItem" id="rGv-dO-CqA">
-                        <barButtonItem key="backBarButtonItem" title="test" id="VNc-FS-3Ko"/>
+                        <barButtonItem key="backBarButtonItem" title="Back" id="VNc-FS-3Ko"/>
                         <barButtonItem key="rightBarButtonItem" title="NEXT" id="DJw-1p-Vat">
                             <connections>
                                 <action selector="moveToCart:" destination="dty-kC-GG5" id="BR7-eh-qV1"/>
@@ -191,17 +192,6 @@
                                                     <rect key="frame" x="84" y="3" width="98" height="98"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b45-hg-6uI">
-                                                    <rect key="frame" x="343" y="42" width="25" height="30"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="33"/>
-                                                    <state key="normal" title="X">
-                                                        <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    </state>
-                                                    <connections>
-                                                        <action selector="deleteButtonTapped:" destination="K8J-ni-eMQ" eventType="touchUpInside" id="idZ-6k-Ftg"/>
-                                                    </connections>
-                                                </button>
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>

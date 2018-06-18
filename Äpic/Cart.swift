@@ -122,15 +122,6 @@ extension Cart: UIImageCropperProtocol {
 }
 
 extension Cart: CellDelegate {
-    func didTapDeleteButton(id: Int) {
-        let alertTitle = "TEST"
-        let message = "\(id) is current row's ID"
-        
-        let alert = UIAlertController(title: alertTitle, message: message, preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
-        present(alert, animated: true, completion: nil)
-    }
-    
     func didTapAddQuantityButton(id: Int) {
         CartData.imageQuantities[id] += 1
         let indexPath = IndexPath(item: id, section: 0)

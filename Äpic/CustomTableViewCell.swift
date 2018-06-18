@@ -9,7 +9,6 @@
 import UIKit
 
 protocol CellDelegate {
-    func didTapDeleteButton(id: Int)
     func didTapAddQuantityButton(id: Int)
     func didTapSubtractQuantityButton(id: Int)
 }
@@ -33,10 +32,6 @@ class CustomTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
-    }
-
-    @IBAction func deleteButtonTapped(_ sender: UIButton) {
-        delegate?.didTapDeleteButton(id: Int(elementID.text!)! - 1)
     }
     
     @IBAction func addQuantityButtonTapped(_ sender: UIButton) {

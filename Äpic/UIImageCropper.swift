@@ -5,7 +5,7 @@
 //  Created by Jari Kalinainen jari@klubitii.com
 //
 //  Licensed under MIT License 2017
-//
+//  File taken from: github.com/jvk75/UIImageCropper
 
 import UIKit
 

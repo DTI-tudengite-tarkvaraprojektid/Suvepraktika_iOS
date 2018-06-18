@@ -39,7 +39,7 @@ class SelectQuantity: UIViewController, UINavigationControllerDelegate {
         totalPrice.text = String(CartData.totalImageQuantity)
     }
     
-    //Cartist tagasi tulles Back nupuga
+    //Coming from cart with back button
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
 
