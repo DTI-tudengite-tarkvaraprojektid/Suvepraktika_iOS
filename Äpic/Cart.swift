@@ -60,6 +60,20 @@ class Cart: UIViewController, UITableViewDelegate, UITableViewDataSource, UINavi
         }
     }
     
+    @IBAction func checkoutButtonTapped(_ sender: UIButton) {
+        if CartData.totalImageQuantity >= 5 {
+            performSegue(withIdentifier: "testsegue", sender: nil)
+        } else {
+            let alertTitle = "Alert!"
+            let message = "Total price has to be atleast 5€!"
+            
+            let alert = UIAlertController(title: alertTitle, message: message, preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+            present(alert, animated: true, completion: nil)
+        }
+    }
+    
+    
     //add picture
     var selectedImage: UIImage!
     

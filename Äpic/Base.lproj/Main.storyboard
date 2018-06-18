@@ -261,7 +261,7 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="CHECKOUT"/>
                                         <connections>
-                                            <segue destination="06j-BM-sJt" kind="show" identifier="testsegue" id="BxB-s0-OdW"/>
+                                            <action selector="checkoutButtonTapped:" destination="TYI-Tt-7qt" eventType="touchUpInside" id="MQz-u2-HSf"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -283,6 +283,7 @@
                         <outlet property="tableView" destination="o9h-95-lUd" id="RnW-Oc-92N"/>
                         <outlet property="totalPrice" destination="7vz-lE-OJJ" id="hQj-ZY-Gv6"/>
                         <segue destination="PtQ-0p-uYA" kind="show" identifier="segue" id="IWU-GR-axp"/>
+                        <segue destination="06j-BM-sJt" kind="show" identifier="testsegue" id="xt1-WA-RJg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HkD-df-7B8" userLabel="First Responder" sceneMemberID="firstResponder"/>
