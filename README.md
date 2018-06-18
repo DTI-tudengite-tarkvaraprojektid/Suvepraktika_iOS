@@ -33,4 +33,12 @@ Select Image             |  Crop Image
   
 Filter Page             |  Filter Applied
 :-------------------------:|:-------------------------:
-![Screenshot 1](READMEimages/FilterPage.PNG)  |  ![Screenshot 2](READMEimages/FilterApplied.PNG)
+![Screenshot 1](READMEimages/FilterPage.PNG)  |  ![Screenshot 2](READMEimages/FilterApplied.PNG)  
+  
+Select Quantity             |  Cart
+:-------------------------:|:-------------------------:
+![Screenshot 1](READMEimages/SelectQuantity.PNG)  |  ![Screenshot 2](READMEimages/Cart.PNG)  
+  
+User Info             |  Terms and Conditions
+:-------------------------:|:-------------------------:
+![Screenshot 1](READMEimages/UserInfo.PNG)  |  ![Screenshot 2](READMEimages/TermsAndConditions.PNG)
