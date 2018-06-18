@@ -39,6 +39,10 @@ Select Quantity             |  Cart
 :-------------------------:|:-------------------------:
 ![Screenshot 5](READMEimages/SelectQuantity.PNG)  |  ![Screenshot 6](READMEimages/Cart.PNG)  
   
+Edit             |  Delete
+:-------------------------:|:-------------------------:
+![Screenshot 5](READMEimages/CartDelete1.PNG)  |  ![Screenshot 6](READMEimages/CartDelete2.PNG)  
+  
 User Info             |  Terms and Conditions
 :-------------------------:|:-------------------------:
 ![Screenshot 7](READMEimages/UserInfo.PNG)  |  ![Screenshot 8](READMEimages/TermsAndConditions.PNG)
