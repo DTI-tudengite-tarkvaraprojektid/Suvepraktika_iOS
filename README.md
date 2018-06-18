@@ -29,4 +29,7 @@ Projektis kasutatud pildi kärpimise teek: https://github.com/jvk75/UIImageCropp
   
 Select Image             |  Crop Image
 :-------------------------:|:-------------------------:
-![Screenshot 1](READMEimages/SelectImage.PNG)  |  ![Screenshot 2](READMEimages/CropImage.PNG)
+![Screenshot 1](READMEimages/SelectImage.PNG)  |  ![Screenshot 2](READMEimages/CropImage.PNG)  
+Filter Page             |  Filter Applied
+:-------------------------:|:-------------------------:
+![Screenshot 1](READMEimages/FilterPage.PNG)  |  ![Screenshot 2](READMEimages/FilterApplied.PNG)
