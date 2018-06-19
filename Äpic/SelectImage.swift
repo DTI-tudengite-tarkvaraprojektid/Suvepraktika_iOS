@@ -10,6 +10,7 @@ import UIKit
 
 class SelectImage: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
     
+    @IBOutlet weak var Main_Button: UIButton!
     var selectedImage: UIImage!
     
     private let picker = UIImagePickerController()
@@ -29,6 +30,8 @@ class SelectImage: UIViewController, UINavigationControllerDelegate, UIImagePick
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        Main_Button.layer.cornerRadius = 10
         
         //setup the cropper
         cropper.picker = picker
