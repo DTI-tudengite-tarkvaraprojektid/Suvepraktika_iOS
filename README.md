@@ -29,20 +29,20 @@ Projektis kasutatud pildi kärpimise teek: https://github.com/jvk75/UIImageCropp
   
 Select Image             |  Crop Image
 :-------------------------:|:-------------------------:
-![Screenshot 1](READMEimages/SelectImage.PNG)  |  ![Screenshot 2](READMEimages/CropImage.PNG)  
+![Screenshot 11](READMEimages/SelectImage.PNG)  |  ![Screenshot 12](READMEimages/CropImage.PNG)  
   
 Filter Page             |  Filter Applied
 :-------------------------:|:-------------------------:
-![Screenshot 3](READMEimages/FilterPage.PNG)  |  ![Screenshot 4](READMEimages/FilterApplied.PNG)  
+![Screenshot 13](READMEimages/FilterPage.PNG)  |  ![Screenshot 14](READMEimages/FilterApplied.PNG)  
   
 Select Quantity             |  Cart
 :-------------------------:|:-------------------------:
-![Screenshot 5](READMEimages/SelectQuantity.PNG)  |  ![Screenshot 6](READMEimages/Cart.PNG)  
+![Screenshot 15](READMEimages/SelectQuantity.PNG)  |  ![Screenshot 16](READMEimages/Cart.PNG)  
   
 Edit             |  Delete
 :-------------------------:|:-------------------------:
-![Screenshot 5](READMEimages/CartDelete1.PNG)  |  ![Screenshot 6](READMEimages/CartDelete2.PNG)  
+![Screenshot 17](READMEimages/CartDelete1.PNG)  |  ![Screenshot 18](READMEimages/CartDelete2.PNG)  
   
 User Info             |  Terms and Conditions
 :-------------------------:|:-------------------------:
-![Screenshot 7](READMEimages/UserInfo.PNG)  |  ![Screenshot 8](READMEimages/TermsAndConditions.PNG)
+![Screenshot 19](READMEimages/UserInfo.PNG)  |  ![Screenshot 110](READMEimages/TermsAndConditions.PNG)
