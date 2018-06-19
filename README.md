@@ -27,22 +27,3 @@ Projektis kasutatud pildi kärpimise teek: https://github.com/jvk75/UIImageCropp
   
 ## Ekraanipildid  
   
-Select Image             |  Crop Image
-:-------------------------:|:-------------------------:
-![Screenshot 1](READMEimages/SelectImage.PNG)  |  ![Screenshot 2](READMEimages/CropImage.PNG)  
-  
-Filter Page             |  Filter Applied
-:-------------------------:|:-------------------------:
-![Screenshot 3](READMEimages/FilterPage.PNG)  |  ![Screenshot 4](READMEimages/FilterApplied.PNG)  
-  
-Select Quantity             |  Cart
-:-------------------------:|:-------------------------:
-![Screenshot 5](READMEimages/SelectQuantity.PNG)  |  ![Screenshot 6](READMEimages/Cart.PNG)  
-  
-Edit             |  Delete
-:-------------------------:|:-------------------------:
-![Screenshot 5](READMEimages/CartDelete1.PNG)  |  ![Screenshot 6](READMEimages/CartDelete2.PNG)  
-  
-User Info             |  Terms and Conditions
-:-------------------------:|:-------------------------:
-![Screenshot 7](READMEimages/UserInfo.PNG)  |  ![Screenshot 8](READMEimages/TermsAndConditions.PNG)
